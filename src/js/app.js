@@ -23,7 +23,7 @@ App = {
   },
 
   initContract: function() {
-    $.getJSON('../build/contractsWall.json', function(data) {
+    $.getJSON('../build/contracts/Wall.json', function(data) {
       var WallArtifact = data;
       App.contracts.Wall = TruffleContract(WallArtifact);
 
