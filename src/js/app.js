@@ -47,7 +47,7 @@ App = {
       wallInstance = instance;
       console.log(wallInstance);
 
-      return wallInstance.getWriting.call();
+      return wallInstance.writing.call();
 
     }).then(function(writing){
       console.log('Writing: ' + writing);
@@ -118,13 +118,6 @@ App = {
   }
 
 };
-
-function getDiff(container, span){
-  return Math.max(container, span) - Math.min(container, span)
-}
-function getRatio(container, span){
-  return container/span;
-}
 
 var TextFit = function(){
   var heightRatio = ($(window).height()-50)/$('#writingOnTheWall').height();

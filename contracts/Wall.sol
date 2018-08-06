@@ -30,10 +30,6 @@ contract Wall {
     author = msg.sender;
   }
 
-  function getWriting() public view returns (string) {
-    return writing;
-  }
-
   function getStringLength(string _s) internal pure returns (uint) {
     bytes memory bs = bytes(_s);
     return bs.length;
