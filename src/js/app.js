@@ -74,7 +74,7 @@ App = {
 
       contractAddress = wallInstance.address;
       $('.contractAddress').text(contractAddress);
-      $('.contractAddress').attr('href', 'https://ropsten.etherscan.io/' + contractAddress);
+      $('.contractAddress').attr('href', 'https://ropsten.etherscan.io/address/' + contractAddress);
 
     }).catch(function(err){
       console.log(err.message);
