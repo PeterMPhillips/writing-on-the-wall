@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Writing on the Wall</title>
+    <link href="css/app.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div id="theWall">
+      <a id="writingOnTheWall" href=""></a>
+    </div>
+    <div id=content>
+      <h1>Writing on the Wall</h1>
+      <div id="info">
+        <p class='large'>Overwrite this message for the cost of <span class="price"></span> ether. The cost increases 10% each time the message is overwritten.</p>
+        <p class='large'>You can view the contract at <span class="contractAddress"></span></p>
+        <p class='large'>Follow us on Twitter: @writingonthewall</p>
+        <p class='small'>*To interact with this smart contract you must install MetaMask or use a web3 compatible browser.</p>
+      </div>
+      <div id="textfield">
+        <h2>Your message:</h2>
+        <textarea id='message' placeholder='Type here...'></textarea>
+      </div>
+      <div id="linkfield">
+        <h2>Your link:</h2>
+        <input id='link' type='text' placeholder='https://www.example.com/'>
+      </div>
+      <p id="error"></p>
+      <input id='submitButton' type='submit' value='Pay Now'>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/autoresize.js"></script>
+    <script>
+      $(function(){
+        $('textarea').autoResize();
+      });
+    </script>
+  </body>
+</html>

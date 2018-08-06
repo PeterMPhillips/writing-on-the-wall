@@ -1,0 +1,115 @@
+*{
+	padding:0;
+	margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  font-weight:lighter;
+}
+html {
+    height: 100%;
+}
+body {
+    color:white;
+    height: 100%;
+    background-color: #4c4177;
+background-image: linear-gradient(315deg, #4c4177 0%, #2a5470 74%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1, h2 {
+  font-weight: 100;
+  text-align: center;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+#content{
+  text-align: center;
+  margin: 80px auto;
+}
+#theWall{
+  opacity: 0.75;
+  font-weight:bolder;
+  height:calc(100% - 50px);
+  width:calc(100% - 50px);
+  margin:25px;
+}
+#writingOnTheWall{
+  font-size:50px;
+}
+#error{
+  color:#59827e;
+  height:20px;
+  font-size:0.9em;
+  font-weight:bolder;
+}
+#submitButton{
+  cursor: pointer;
+}
+#submitButton:hover{
+  background-color: #ffffff10;
+}
+input, textarea{
+  color:white;
+  background-color: #ffffff00;
+  padding:15px 30px;
+  outline:none;
+  -webkit-appearance: none;
+}
+input[type='text'], textarea {
+  width:100%;
+  font-size: 1.3em;
+  max-width: 620px;
+}
+textarea {
+  resize: none;
+  height:auto;
+  min-height:150px;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ffffff80;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #ffffff80;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #ffffff80;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #ffffff80;
+}
+#info, input, textarea {
+  border-radius:30px;
+  border:1px solid rgba(255,255,255,0.5);
+  margin:20px auto;
+}
+#info{
+  padding:10px;
+  text-align: center;
+  max-width: 600px;
+}
+#info p{
+  padding: 10px;
+}
+#info .large{
+  font-size:1.2em;
+}
+#info .small{
+  font-size:0.9em;
+}
+@media (max-width: 600px) {
+  #info, input[type='text'], textarea {
+    margin:10px;
+  }
+  input[type='text'], textarea {
+    width:calc(100% - 20px);
+  }
+}
+@media (max-width: 700px) and (min-width: 601px){
+  #info, input[type='text'], textarea {
+    width:calc(100% - 100px);
+  }
+}
+#price{
+  font-weight: bolder;
+}
