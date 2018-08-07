@@ -57,6 +57,11 @@ App = {
         font_size = font_size + 1;
         $('#writingOnTheWall').css('font-size', font_size + 'px');
       }
+      while(($(window).width()-50) < $('#writingOnTheWall').height()){
+        font_size = parseFloat( $('#writingOnTheWall').css('font-size') );
+        font_size = font_size - 1;
+        $('#writingOnTheWall').css('font-size', font_size + 'px');
+      }
       $(window).resize(function(){
       	TextFit();
       });
