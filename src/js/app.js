@@ -75,6 +75,11 @@ App = {
       contractAddress = wallInstance.address;
       $('.contractAddress').text(contractAddress);
       $('.contractAddress').attr('href', 'https://ropsten.etherscan.io/address/' + contractAddress);
+      while($('#contractAddress').width() > $("#info").width()-20){
+        font_size = parseFloat( $('#contractAddress').css('font-size') );
+        font_size = font_size - 1;
+        $('#contractAddress').css('font-size', font_size + 'px');
+      }
 
     }).catch(function(err){
       console.log(err.message);
